@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "expo-app",
-    "slug": "expo-app",
+    "name": "gluestack-ui",
+    "slug": "gluestack-ui",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2624432e-d231-4ce2-a53a-95fb79b50dd2"
+      }
+    },
+    "owner": "geekgautam"
   }
 }

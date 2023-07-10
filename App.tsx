@@ -1,4 +1,4 @@
-import { GluestackUIProvider } from "./components";
+import { Avatar, GluestackUIProvider } from "./components";
 import { config } from "./gluestack-ui.config";
 import { Box, Text, Image } from "./components";
 
@@ -13,6 +13,16 @@ export default function App() {
 const Home = () => {
   return <Container />;
 };
+
+const Component = () => {
+  return (
+    <>
+      <Avatar>
+        <Avatar.Image source={{uri:'https://www.freecodecamp.org/news/content/images/2022/02/arrows-2889040_1920.jpg'}}/>
+      </Avatar>
+    </>
+  );
+}
 
 const FeatureCard = ({ iconSvg, name, desc }: any) => {
   return (
@@ -30,7 +40,7 @@ const FeatureCard = ({ iconSvg, name, desc }: any) => {
         <Text fontSize={22} color="$white" fontWeight="500" ml="$2">
           {name}
         </Text>
-      </Box>
+      A</Box>
       <Text color="$textDark400" mt="$2">
         {desc}
       </Text>
@@ -94,7 +104,13 @@ const Container = () => {
             Get started by editing
           </Text>
           <Text color="$white" fontWeight="$medium" ml="$2">
-            pages/index.tsx
+            {`<Component/> `}
+          </Text>
+          <Text color="$white" fontWeight="$normal">
+            in
+          </Text>
+          <Text color="$white" fontWeight="$medium" ml="$2">
+            App.tsx
           </Text>
         </Box>
         <Box
@@ -112,7 +128,7 @@ const Container = () => {
             },
           }}
         >
-          {/* <Image src="/logo.svg" fill alt="logo" priority /> */}
+          <Component/>
         </Box>
         <Box
           sx={{
